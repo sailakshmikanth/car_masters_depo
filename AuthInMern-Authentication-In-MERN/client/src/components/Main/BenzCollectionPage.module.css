@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100vh; /* Set container height to fill the viewport */
+    background-color: black;
+    
+}
+
+.logo {
+    width: 200px; /* Adjust size as needed */
+    margin-bottom: 20px;
+    animation: slideInLeft 1s forwards;
+}
+
+.text {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s forwards; /* Animation from left to right */
+    opacity: 0; /* Initially set opacity to 0 */
+    font-family: Mercedes-Benz Corpo;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.videoContainer {
+    width: 70%;
+    margin-bottom: 35px;
+}
+
+.video {
+    width: 100%;
+    max-width: 100%; /* Ensure the video does not exceed its container's width */
+    animation: slideInLeft 1s forwards;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+}
+
+.image {
+    width: 200px; /* Adjust size as needed */
+    margin: 10px 50px; /* Add margin to images */
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.2); /* Scale up the image on hover */
+    z-index: 3; /* Ensure the hovered image is on top of others */
+}
+
+
+.container {
+    position: relative;
+}
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire width of the viewport */
+    height: 100%; /* Cover the entire height of the viewport */
+    pointer-events: none; /* Prevents the stars from interfering with user interaction */
+}
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkling 2s infinite;
+}
+
+@keyframes twinkling {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.imageText1 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    position: absolute;
+    right: 1280px;
+}
+.imageText2 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    position: absolute;
+    right: 990px;
+}
+.imageText3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    position: absolute;
+    right: 677px;
+}
+.imageText4 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    position: absolute;
+    right: 380px;
+}
+.imageText5 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    position: absolute;
+    right: 48px;
+}

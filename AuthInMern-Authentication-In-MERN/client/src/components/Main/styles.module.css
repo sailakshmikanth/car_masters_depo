@@ -1,0 +1,228 @@
+/* styles.module.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bugatti Text Regular, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main_container {
+  width: 320vw;
+  height: 100vh;
+  display: flex;
+}
+
+.video_section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.background_video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.white_btn {
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 20px;
+  width: 120px;
+  font-weight: bold;
+  font-family: Bugatti Text Regular, sans-serif;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.car_logo_section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.car_logo_video {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.car_images_section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.car_image {
+  width: 200px;
+  height: auto;
+  margin: 20px;
+  transition: transform 0.3s ease; /* Transition for smooth effect */
+}
+
+.car_image:hover {
+  transform: scale(1.2); /* Scale up the image on hover */
+  z-index: 3; /* Ensure the hovered image is on top of others */
+}
+.about_section {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Align items in the center horizontally */
+  height: 100vh;
+  margin: 0 auto; /* Center the section horizontally */
+  max-width: 60%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.about_section h2 {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Bugatti Monospace Regular", sans-serif;
+  animation: slideInFromLeft 1s ease forwards; /* Apply the slideInFromLeft animation */
+}
+
+.about_section p {
+  font-family: "Bugatti Monospace Regular", sans-serif;
+  font-size: 16px;
+  max-width: 1015px;
+  padding-bottom: 20px;
+  letter-spacing: 1px; /* Add space between characters */
+  line-height: 1.5; /* Add space between lines */
+  animation: slideInFromLeft 1s ease forwards; /* Apply the slideInFromLeft animation */
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+    transform: translateX(-100%); /* Move from left to right */
+  }
+  to {
+    opacity: 1; /* End with full opacity */
+    transform: translateX(0); /* Move to the original position */
+  }
+}
+
+.about {
+ background: black;
+ height: 100vh;
+ left: 0;
+top: 0;
+width: 120vw;
+}
+/* styles.module.css */
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  animation: slideInFromLeft 1s ease forwards; /* Apply the slideInFromLeft animation */
+}
+
+.social_icon {
+  font-size: 24px;
+  margin: 0 10px; /* Adjust the spacing between icons */
+  color: #555; /* Adjust the color of the icons */
+}
+
+.content h1 {
+  font-size: 46px; /* Adjust the font size for the heading */
+  font-family: "Bugatti Text Regular", sans-serif;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px; /* Add spacing between the heading and the paragraph */
+}
+
+.content p {
+  font-size: 20px; /* Adjust the font size for the paragraph */
+  line-height: 1.5; /* Add spacing between lines */
+  margin-top: 20px; /* Add spacing above the paragraph */
+}
+
+.scroll_down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.scroll_icon {
+  font-size: 22px;
+  color: white;
+  margin: 0 5px; /* Add space between arrows */
+  animation: scrollAnimation 0.5s infinite alternate; /* Add animation */
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+.scroll_text {
+  font-size: 14px; /* Adjust font size */
+  color: white;
+  margin-bottom: 5px; /* Add margin to separate text from arrows */
+  font-weight: bold; /* Make the text bold */
+}
+
+
+
+
+
+
